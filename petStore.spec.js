@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const request = require("supertest");
 
 describe("Post /pet, Get /Pet/id", () => {
