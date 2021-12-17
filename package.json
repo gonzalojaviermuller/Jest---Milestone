@@ -22,5 +22,19 @@
     "jest": "^27.4.5",
     "prettier": "2.5.1",
     "supertest": "^6.1.6"
-  }
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {}
 }
