@@ -1,21 +1,21 @@
 import { petObject } from "../support";
 const request = require("supertest");
 
-export default async (expectedStatus, params) => {
+export default async (expectedStatus = 200, params = {id: 2, name: "Sharky"}) => {
   const baseUrl = "https://petstore.swagger.io/v2";
   const endpoint = "/pet";
+
   const requestBody = petObject(params.id, params.name);
+
   const res = await request(baseUrl)
     .post(endpoint)
     .send(requestBody)
     .expect(expectedStatus);
 
   return {
-    request: {
-      body: requestBody,
-    },
     response: {
-      body: res.text,
+      headers: res.headers,
+      body: res.body,
     },
   };
 };
