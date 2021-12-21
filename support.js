@@ -1,5 +1,5 @@
 function petObject(id, name) {
-  const petObject = {
+  return {
     id: `${id}`,
     category: {
       id: 0,
@@ -15,8 +15,6 @@ function petObject(id, name) {
     ],
     status: "available",
   };
-
-  return petObject;
 }
 
 module.exports = {
