@@ -1,8 +1,8 @@
-name: Main
+name: main
 on: [push, pull_request]
 jobs:
   notify:
-    name: CI
+    name: ci
     runs-on: ubuntu-latest
 
     steps:
