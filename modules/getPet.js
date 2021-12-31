@@ -1,6 +1,6 @@
 const request = require("supertest");
 
-export default async (expectedStatus = 200, params = {id: 2}) => {
+export default async (expectedStatus = 200, params = { id: 2 }) => {
   const baseUrl = "https://petstore.swagger.io/v2";
   const endpoint = `/pet/${params.id}`;
 
@@ -9,6 +9,6 @@ export default async (expectedStatus = 200, params = {id: 2}) => {
   return {
     response: {
       body: res.body,
-    }
+    },
   };
 };

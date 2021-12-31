@@ -1,7 +1,10 @@
 import { petObject } from "../support";
 const request = require("supertest");
 
-export default async (expectedStatus = 200, params = {id: 2, name: "Sharky"}) => {
+export default async (
+  expectedStatus = 200,
+  params = { id: 2, name: "Sharky" }
+) => {
   const baseUrl = "https://petstore.swagger.io/v2";
   const endpoint = "/pet";
 
