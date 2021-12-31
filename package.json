@@ -45,12 +45,6 @@
       "ecmaVersion": "latest",
       "sourceType": "module"
     },
-    "plugins": [
-      "react"
-    ],
     "rules": {}
-  },
-  "dependencies": {
-    "eslint-plugin-jest": "^25.3.3"
   }
 }
