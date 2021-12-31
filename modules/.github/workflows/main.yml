@@ -2,7 +2,7 @@ name: Main
 on: [push, pull_request]
 jobs:
   notify:
-    name: ci
+    name: CI
     runs-on: ubuntu-latest
 
     steps:
