@@ -1,7 +1,7 @@
 name: Main
 on: [push, pull_request]
 jobs:
-    name: CI
+  CI:
     runs-on: ubuntu-latest
 
     steps:
